@@ -7,7 +7,8 @@ import numpy as np
 PTH = #ENTER PATH TO DATASET HERE
 df = pd.read_csv(PTH)
 
-nan_info = {col:{'uniques': len(df[col].unique()), 'nan_count': df[col].isnull().sum()} for col in df.columns}
+nan_info = {col:{'uniques': len(df[col].unique()), 'nan_count': df[col].isnull().sum(), 'type': df[col].dtype} for col in df.columns}
 print(nan_info)
 not_nans = [col for col in df.columns if nan_info[col]['nan_count'] == 0]
 print(not_nans)
+nans = [col for col in df.columns if col not in not_nans]
