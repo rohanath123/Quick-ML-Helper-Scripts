@@ -3,7 +3,8 @@
 import pandas as pd 
 import numpy as np 
 
-PTH = 'D:/Machine Learning Datasets/titanic/train.csv'
+PTH = #ENTER PATH TO DATASET HERE
+#READ CSV FILE, BE SURE TO INCLUDE WHICHEVER SPECIFICIATIONS NEEDED WHILE IMPORTING (E.G. DATEPART)
 df = pd.read_csv(PTH)
 
 #FIND COLUMNS WHOSE DTYPES ARE NOT NUMERICAL
