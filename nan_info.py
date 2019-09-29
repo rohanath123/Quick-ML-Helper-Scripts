@@ -4,7 +4,7 @@
 import pandas as pd 
 import numpy as np 
 
-PTH = 'D:/Machine Learning Datasets/titanic/train.csv'
+PTH = #ENTER PATH TO DATASET HERE
 df = pd.read_csv(PTH)
 
 nan_info = {col:{'uniques': len(df[col].unique()), 'nan_count': df[col].isnull().sum()} for col in df.columns}
